@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script type="text/javascript" src="../../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Modal - Jquery</title>
+
+    <style>
+      .content {
+        font-family: sans-serif;
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+      }
+      nav {
+        background-color: #333;
+        overflow: hidden;
+        margin-right: 10%;
+        margin-left: 10%;
+      }
+
+      nav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      nav .active {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      #tombol {
+        background-color: dodgerblue;
+        color: white;
+        padding: 7px;
+        border: 1px dodgerblue;
+        border-radius: 3px;
+      }
+
+      #modal-box {
+        background-color: #f0f0f0;
+        position: absolute;
+        display: block;
+        width: 500px;
+        padding: 15px;
+        border-radius: 5px;
+        /* display: none; */
+      }
+
+      #close-button {
+        background-color: crimson;
+        color: white;
+        padding: 5px;
+        border: 1px solid crimson;
+        float: right;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../selector/index.html">Selector</a>
+      <a href="../event/index.html">Event</a>
+      <a href="../animation/index.html">Animation</a>
+      <a class="active" href="../modal/index.html">Modal</a>
+    </nav>
+    <div class="content">
+      <button id="tombol">Information</button>
+      <br />
+      <br />
+      <div id="modal-box">
+        <div id="close-button">X</div>
+        <div id="modal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum
+          quia alias excepturi consequatur ipsum omnis, fuga dolorum? Voluptas
+          vel dolore iusto optio, neque delectus incidunt cupiditate officiis
+          nesciunt ex fugiat animi odit deserunt assumenda ipsum nobis
+          reiciendis saepe aspernatur dolorum. Et soluta expedita ipsam
+          asperiores. Doloribus officiis, consequatur ab consequuntur autem,
+          quasi sit reiciendis eius error id ut saepe deserunt blanditiis nam
+          dolorem perspiciatis et quidem quaerat recusandae. Perspiciatis,
+          cumque officia voluptatibus facilis quisquam animi itaque dignissimos
+          sequi, quo laudantium quod vitae similique repudiandae labore
+          architecto ex voluptatem! Similique deserunt reiciendis sunt,
+          cupiditate eaque necessitatibus vero fugit quae saepe.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
